@@ -1,4 +1,9 @@
-.PHONY: up down restart build logs ps
+.PHONY: deploy up down restart build logs ps
+
+deploy:
+	git pull --ff-only origin main
+	docker compose up --build -d
+	docker compose ps
 
 up:
 	docker compose up --build -d
