@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: todo-test-api-app
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${APP_PORT:-3025}:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production

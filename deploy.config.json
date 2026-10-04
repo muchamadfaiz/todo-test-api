@@ -1,0 +1,16 @@
+{
+  "server": {
+    "host": "103.197.190.74",
+    "user": "gawegawe",
+    "key_path": "~/.ssh/gawegawe.pem",
+    "ssh_alias": "gawegawe"
+  },
+  "app": {
+    "name": "todo-test-api",
+    "type": "docker",
+    "domain": "todo-test.gawegawe.online"
+  },
+  "database": {
+    "needed": false
+  }
+}
